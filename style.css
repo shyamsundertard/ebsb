@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.categories-section {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.categories-section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.category-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.category-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 14px;
+  margin: 0;
+  padding: 20px;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.category-card.herbivores::before {
+  background-image: linear-gradient(to bottom, #4CAF50, #388E3C);
+}
+
+.category-card.carnivores::before {
+  background-image: linear-gradient(to bottom, #FF5722, #E64A19);
+}
+
+.category-card.flying::before {
+  background-image: linear-gradient(to bottom, #2196F3, #1976D2);
+}
+
+.category-card.aquatic::before {
+  background-image: linear-gradient(to bottom, #9C27B0, #7B1FA2);
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card:hover::before {
+  opacity: 1;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+  
+
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .about-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff5a5f;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  .category-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  .category-list li {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .category-list h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .category-list p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .dinosaur-history {
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .dinosaur-history h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .dinosaur-history p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .dinosaur-history:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #ff5a5f;
+    border-radius: 50%;
+  }
+  
+  .category-list li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .about-section {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-section h2 {
+    color: #ff5252;
+  }
+  
+  .about-section p {
+    color: #777;
+  }
+  
+  .category-list h4 {
+    color: #2b93d4;
+  }
+  
+  .category-list p {
+    color: #555;
+  }
+  
+  .dinosaur-history h3 {
+    color: #2b93d4;
+  }
+  
+  .dinosaur-history p {
+    color: #555;
+  }
+  
+  .category-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contact-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .contact-section a {
+    display: inline-block;
+    background-color: #ff5e6c;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section a:hover {
+    background-color: #ff394d;
+  }
+  
+  .contact-section .emoji {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section .fun-fact {
+    font-size: 24px;
+    color: #888;
+  }
+  
+  .contact-section .fun-fact span {
+    color: #ff5e6c;
+  }
+  
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  footer .rights {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+  
+  
+  .categories-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .categories-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+  }
+  
+  .category-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .category-card p {
+    font-size: 14px;
+    margin: 0;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-card:hover p {
+    opacity: 1;
+  }
+  
+  .category-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-card:hover::before {
+    opacity: 1;
+  }
+
+  .category-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .category-card:hover h3 {
+    opacity: 1;
+  }
